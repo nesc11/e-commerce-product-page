@@ -154,5 +154,50 @@ nav {
     box-shadow: 0 0 0 100vmax var(--lightbox-background);
 }
 
+/* ---MAIN--- */
+/* Carousel */
+.carousel {
+    position: relative;
+}
+
+.carousel__nav {
+    display: none;
+}
+
+.carousel__track {
+    display: flex;
+}
+
+.carousel__slide {
+    width: 0px;
+    transition: all .3s ease-in-out;
+}
+
+.carousel__slide.current-slide {
+    width: 100%;
+}
+
+.carousel__slide>img {
+    height: 100vw;
+    object-fit: cover;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    padding: .8rem;
+    background-color: var(--clr-neutral-white);
+}
+
+.previous {
+    left: 5%;
+}
+
+.next {
+    right: 5%;
+}
+
 
 @media screen and (min-width: 48em) {}
