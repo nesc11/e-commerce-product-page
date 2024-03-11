@@ -1,0 +1,82 @@
+:root {
+    /* Font family */
+    font-family: "Kumbh Sans", sans-serif;
+
+    /* Font sizes */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.25rem;
+    --fs-2xl: 1.5rem;
+    --fs-3xl: 1.875rem;
+    --fs-4xl: 2.25rem;
+    --fs-5xl: 3rem;
+    --fs-6xl: 3.75rem;
+
+    /* Font weights */
+    --fw-r: 400;
+    --fw-b: 700;
+
+    /* COLORS */
+    /* Primary */
+    --clr-primary-orange: hsl(26, 100%, 55%);
+    --clr-primary-pale-orange: hsl(25, 100%, 94%);
+    /* Neutral */
+    --clr-neutral-very-dark-blue: hsl(220, 13%, 13%);
+    --clr-neutral-dark-grayish-blue: hsl(219, 9%, 45%);
+    --clr-neutral-grayish-blue: hsl(220, 14%, 75%);
+    --clr-neutral-light-grayish-blue: hsl(223, 64%, 98%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-black: hsl(0, 0%, 0%);
+    --lightbox-background: hsl(0, 0%, 0%, 0.75);
+}
+
+/* General */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-family: var(--ff-sans);
+    font-size: 16px;
+    font-weight: var(--fw-r);
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.1;
+}
+
+body {
+    background-color: var(--clr-neutral-light-grayish-blue);
+}
+
+
+
+@media screen and (min-width: 48em) {}
