@@ -49,6 +49,7 @@ img,
 svg {
     display: block;
     max-width: 100%;
+    object-fit: contain;
 }
 
 ul {
@@ -57,6 +58,12 @@ ul {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background-color: inherit;
 }
 
 html {
@@ -77,6 +84,75 @@ body {
     background-color: var(--clr-neutral-light-grayish-blue);
 }
 
+
+/* Common layout */
+.wrapper {
+    width: 90%;
+    margin-inline: auto;
+}
+
+/* ---HEADER--- */
+
+nav {
+    display: flex;
+    align-items: center;
+    padding-block-start: 1rem;
+    padding-block-end: 2rem;
+}
+
+.avatar-container {
+    margin-left: auto;
+    display: flex;
+    gap: 1em;
+}
+
+.avatar {
+    width: 25px;
+}
+
+/* Icon menu */
+.icon-menu-container {
+    margin-inline-end: 1rem;
+    position: relative;
+    z-index: 100;
+}
+
+.icon-close {
+    display: none;
+}
+
+.icon-menu-container.expanded .icon-menu {
+    display: none;
+}
+
+.icon-menu-container.expanded .icon-close {
+    display: block;
+}
+
+
+/* Nav links */
+.nav-links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    top: 0;
+    left: -100vw;
+    width: 65%;
+    height: 100vh;
+    padding-inline-start: 1rem;
+    padding-block-start: 6.5rem;
+    background-color: var(--clr-neutral-white);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-b);
+    color: var(--clr-neutral-very-dark-blue);
+    transition: all .2s ease-in;
+}
+
+.nav-links.expanded {
+    left: 0;
+    box-shadow: 0 0 0 100vmax var(--lightbox-background);
+}
 
 
 @media screen and (min-width: 48em) {}
