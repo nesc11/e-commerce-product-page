@@ -239,7 +239,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 1rem;
+    padding-block: 1.5rem;
 }
 
 h2 {
@@ -279,6 +279,7 @@ form {
 }
 
 .form-row input[type="number"] {
+    padding-block: 1rem;
     text-align: center;
 }
 
@@ -347,6 +348,14 @@ form {
         padding-block: 2rem;
     }
 
+    .avatar-container {
+        gap: 2rem;
+    }
+
+    .avatar {
+        width: 40px;
+    }
+
     /* ---MAIN--- */
     main {
         max-width: 1100px;
@@ -383,7 +392,7 @@ form {
         display: grid;
         height: 100%;
         place-content: center;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     .product-company {
